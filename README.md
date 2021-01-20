@@ -1,11 +1,12 @@
 # WEB
 
- [Background gadients CSS](https://webgradients.com/)
+ ## [Background gadients CSS](https://webgradients.com/)
  ```
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
  ```
  
- Imagem para aba ao lado do titulo em 16x16:  [favicon](http://tools.dynamicdrive.com/favicon/)
+ 
+ ## Imagem para aba ao lado do titulo em 16x16:  [favicon](http://tools.dynamicdrive.com/favicon/)
  
  
  ```
