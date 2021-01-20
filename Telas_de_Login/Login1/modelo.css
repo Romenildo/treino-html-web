@@ -1,0 +1,85 @@
+body{
+    margin: 0;/*definir margin e padding em 0 como padrão caso o navegador seja diferente*/
+    padding: 0;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);/*Plano de fundo com gradiente*/
+    background-size: cover;/*tamanho da tela de fundo cover(cobrindo)*/
+    font-family: "Comfortaa", sans-serif;
+}
+
+.login{/*box da div de login*/
+    width: 420px;/*largura da box do login*/
+    height: 520px;/*altura da box de login*/
+    /*border: 2px solid rgb(89, 255, 241);*//*borda da box de login largura de 2px style:solid e cor rgb*/
+    border-radius: 80px;/*deixar a box curvada*/
+    color:rgb(255, 255, 255);/*cor do texto da box*/
+    background-color: rgba(0, 0, 0, 0.514);/*cor de fundo da box*/
+    position: relative;/*modelo do layout*/
+    top: 120px;/*posicao a partir do topo até +400px*/
+    left: 520px;/*posicao a partir da esquerda até +200px a direita*/
+    box-sizing: border-box;/*define a box com o border box*/
+    padding: 68px 40px;/*distancia entre o texto e a borda*/
+
+}
+
+h1{/*estilo do h1 (nome LOGIN)*/
+    margin: 0;/*margem ao redor*/
+    padding: 0px 0px 20px 0px;/*margem de dentro*/
+    letter-spacing: 10px;/*espaços entre as letras*/
+    text-transform: uppercase;/*tranforma o texto em MAIUSCULA*/
+    text-align: center;/*alinha o texto no centro*/
+    font-size: 30px;/*tamanho da letra*/
+    text-shadow: 3px 1px rgb(250, 151, 38);/*adiciona sombra*/
+}
+
+.login p{/*parafros <p> o nome USUARIO e SENHA*/
+    margin: 0;
+    padding: 0;
+    font-weight: bold;/*negrito*/
+}
+
+.login input{/*local da caixa do input*/
+    width: 100%;/*tamanho da caixa*/
+    margin-bottom: 21px;/*margem de baixo*/
+}
+
+.login input[type="text"],input[type="password"] {/*caixas de input e texto e senha*/
+    border: none;/*sem borda*/
+    border-bottom: 1px solid white;/*borda de baixo(linha branca embaixo)*/
+    background: transparent;/*plano de fundo transparente*/
+    outline: none;/*borda diferenciada(pesquisar mais dps)*/
+    height: 40px;/*largura da caixa*/
+    color: white;/*cor da letra*/
+    font-size: 16px;/*tamanho da letra*/
+
+}
+
+.login input[type="submit"]{/*botao de login*/
+    border: none;/*sem borda*/
+    outline: none;/*outline sem*/
+    height: 35px;/*tamanho do botao*/
+    color: rgb(255, 255, 255);/*cor do teto*/
+    background: linear-gradient(to right, #f83600 0%, #f9d423 100%);/*plano de fundo do botao em degrade*/
+    border-radius: 20px;/*curvar as bordas*/
+    transition: 0.2s;/*transicao para o hover*/
+}
+
+.login input[type="submit"]:hover{/*ao passar o mouse pelo botao*/
+    cursor: pointer;/*mudar o cursor para selecionavel*/
+    background:linear-gradient(to left, #f83600 0%, #f9d423 100%);/*e altera o plano de fundo*/
+    transition: 0.2s;/*tempo para retornar ao tirar o mouse*/
+}
+
+.login a{/*box do esqueceu a senha e possui conta*/
+    font-weight: bold;/*negrito*/
+    text-decoration: none;/*sem decoração*/
+    font-size: 12px;/*tamanho da letra*/
+    line-height: 20px;/*quase um padding de cima*/
+    color:rgb(255, 255, 255);/*cor do texto*/
+    transition: 0.2s;/*transação para o hover*/
+
+}
+
+.login a:hover{/*quando passar o mouse pelo texto */
+    transition: 0.2s;
+    color:#f85e34;/*muda cor do texto*/
+}
