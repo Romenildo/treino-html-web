@@ -10,6 +10,21 @@
  
  
  ```
+ <head>
     <title>titulo da pagina</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
- ````
+</head>
+    
+ ```
+ 
+ ##[Icons](https://fontawesome.com/icons?d=gallery&m=free)
+ 
+ ```
+ <head>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+      <i class="fas fa-cloud"></i>
+</body>
+ ```
