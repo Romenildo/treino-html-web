@@ -17,7 +17,7 @@
     
  ```
  
- ##[Icons](https://fontawesome.com/icons?d=gallery&m=free)
+ ## [Icons](https://fontawesome.com/icons?d=gallery&m=free)
  
  ```
  <head>
