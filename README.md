@@ -17,14 +17,15 @@
     
  ```
  
- ## [Icons](https://fontawesome.com/icons?d=gallery&m=free)
+ ## [Google Icons](https://material.io/resources/icons/?style=baseline)
  
  ```
  <head>
-     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-      <i class="fas fa-cloud"></i>
+      <i class="material-icons">cloud</i>
+      <i class="material-icons">favorite</i>
 </body>
  ```
