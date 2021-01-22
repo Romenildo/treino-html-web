@@ -149,12 +149,13 @@ main {
 .status-coluna{
     height: 97%;
     width: 33%;
-    margin: 0 2px;
+    margin: 0 1px;
     margin-top: 10px;
     
     background-color: rgb(90, 89, 89);
-    border: 3px solid black;
-    border-radius: 20px;
+    border-right: 2px ridge var(--black-always);
+    border-left: 1px solid #a5a5a5;
+    border-radius: 3px;
     box-shadow: 0 0 4px black;
 }
 
