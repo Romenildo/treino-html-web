@@ -1,0 +1,131 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*TODO O BACKGROUND*/
+.block{
+    background-image: linear-gradient(to right, #ffffff 0%, #cccccc 100%);
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+/*AREA ONDE FICA OS BOTOES*/
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 460px;
+    height: 120px;
+    
+    margin: auto auto;
+    padding: 5px;
+}
+
+/*BUTÕES*/
+.button{
+    background-image: linear-gradient(to right, #000000 0%, #0c0c0b 100%);
+    height: 75px;
+    width: 70px;
+    border-radius: 50%;
+    
+    display: inline-flex;
+    align-items: center;
+
+    border: 2px inset white;
+}
+
+/*ICON*/
+a{
+    text-decoration: none;
+    color: white;
+  
+    position: relative;
+    left: 15px;
+}
+
+
+/*FAZER COM QUE A COR DE FUNDO MUDE DE ACORDO  COM QUAL FOR*/
+.button:nth-child(1):hover{
+    background-image: linear-gradient(to top, #1e1bee 50%, #f8f8f8 100%);
+    box-shadow: 0 0 30px rgb(42, 38, 241);
+}
+
+.button:nth-child(2):hover{
+    background-image: linear-gradient(to top, #1beee3 50%, #f8f8f8 100%);
+    box-shadow: 0 0 30px rgb(36, 241, 224);
+}
+.button:nth-child(3):hover{
+    background-image: linear-gradient(to top, #ee6f1b 50%, #f8f8f8 100%);
+    box-shadow: 0 0 30px rgb(241, 145, 36);
+}
+.button:nth-child(4):hover{
+    background-image: linear-gradient(to top, #ee1b1b 50%, #f8f8f8 100%);
+    box-shadow: 0 0 30px rgb(241, 36, 36);
+}
+.button:nth-child(5):hover{
+    background-image: linear-gradient(to top, #000000 50%, #f8f8f8 100%);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+/*---------------------TOOLTIP -------------------------------*/
+
+/*TOOLTIP DE TODOS OS ICON*/
+.tooltip{
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+
+    position: relative;
+    bottom: 80px;
+    right: 50px;
+
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    background-color: white;
+    
+    visibility: hidden;
+}
+/*RETANGULO ABAIXO DO TOOLTIP*/
+.tooltip::after{
+    content: " ";
+    position: absolute;
+    top: 53px;
+    right: 50px;
+    
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/*QUANDO PASSAR O MOUSE EM CADA UM DEIXAR VISIVEL E MUDAR A COR DE ACORDO COM A ICON*/
+.button:nth-child(1):hover .tooltip{
+    visibility: visible;
+    color: blue;
+}
+.button:nth-child(2):hover .tooltip{
+    visibility: visible;
+    color: #1beee3;
+}
+.button:nth-child(3):hover .tooltip{
+    visibility: visible;
+    color: #ee6f1b;
+}
+.button:nth-child(4):hover .tooltip{
+    visibility: visible;
+    color: #ee1b1b;
+}
+.button:nth-child(5):hover .tooltip{
+    visibility: visible;
+    color: #000000;
+}
+
