@@ -21,6 +21,7 @@ body{
     width: 980px;
     height: auto;
     margin: 0 auto;
+    font-family: Tahoma, sans-serif;
 }
 
 header{
@@ -38,7 +39,7 @@ header{
 
 .logo{
     display: flex;
-    background-image: url(logo.jpg);
+    background-image: url(img/logo.jpg);
     height: 220px;
     border: 4px solid var(--bordas);
     
@@ -104,7 +105,7 @@ main {
     display: flex;
     justify-content: space-evenly;
 
-    background-color: rgb(51, 47, 47);
+    background-color: #1a1a1a;
     height: 426px;
 
     padding: 5px;
@@ -121,21 +122,44 @@ main {
     flex-direction: column;
 
     margin: 5px;
+    position: relative;
     
-    background-color: red;
+
     width: 69px;
     height: 100%;
-    border: 2px solid black;
+    z-index: 1;
 }
 .coluna-personagem{
     margin: 5px;
     margin-top: 26px;
-    background-color: red;
     height: 90%;
     width: 600px;
-    border: 2px solid black;
+    z-index: 0;
+    
 }
 
+.brilho{
+    box-shadow: 0 0 10px black;
+    position: relative;
+}
+
+.coluna .brilho::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 3px;
+    left: 2px;
+    box-shadow: inset 0 0 25px #33ec22;
+    opacity: 0; 
+}
+.item:hover .brilho:after {
+	opacity: 1;
+}
+
+
+/*Status*/
 
 .status{
     display: flex;
@@ -157,7 +181,23 @@ main {
     border-left: 1px solid #a5a5a5;
     border-radius: 3px;
     box-shadow: 0 0 4px black;
+
+    display: block;
+    padding-top: 10px;
+
 }
+.item-status{
+    color: white;
+    margin-bottom: 0px;
+    padding: 0;
+    border-bottom: 1px ridge black;
+    margin: -4px 8px;
+    line-height: 0px;
+    font-size: 15px;
+    
+    
+}
+
 
 
 
@@ -175,6 +215,20 @@ main {
     box-shadow: inset 0 0 15px black;
     border-radius: 5px;
     border-top: none;
+
+    display: flex;
+}
+.elementos{
+    display: flex;
+    margin: 0px 10px;
+}
+.elementos .texto-elemento{
+    width: 100px;
+    position: relative;
+    left: 40px;
+    bottom: 13px;
+    color: white;
+    font-size: 18px;
 }
 
 
@@ -189,5 +243,53 @@ footer{
     background-color: rgb(179, 174, 174);
     width: 100%;
     height: 50px;
+
+    display: flex;
+    justify-content: center;
 }
 
+/*TOOLLTIP*/
+.tooltip p:not(.vr){
+    color: rgb(185, 183, 183);
+    position: relative;
+    bottom: 13px;
+    line-height: 5px;
+}
+
+.vr{
+    color: chartreuse;
+}
+
+div{
+    display: block;
+}
+.item .r {
+    right: 69px;
+}
+.item .l{
+    left: 69px;
+}
+.item .tooltip {
+    top: 0px;
+    width: 350px;
+    font-size: 80%;
+    background: rgba(0, 0, 0,0.75);
+
+    border: 2px solid rgb(168, 168, 168);
+    color: var(white);
+    padding: 5px;
+    text-align: left;
+}
+
+.tooltip {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 20;
+}
+.item:hover .tooltip{
+    visibility: visible;
+}
+p{
+    color: rgb(185, 184, 184);
+}
