@@ -42,4 +42,12 @@ exemplo a seguir:
 
 const reverseObj = obj =>{
 	const newObj = {}
-  }
+  	for(let i in obj){
+    	newObj[obj[i]] = i
+    }
+  console.log(newObj)
+}
+
+reverseObj({a:"1", b:"2"})
+
+
